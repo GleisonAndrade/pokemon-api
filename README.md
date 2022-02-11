@@ -1,24 +1,37 @@
-# README
+# Pokemon API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Dependencies
 
-Things you may want to cover:
+- Ruby 3.0.X
+- Bundler 2.2.X
 
-* Ruby version
+## Docker
+### Dependencies
 
-* System dependencies
+- [Docker](https://docs.docker.com/engine/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-* Configuration
+Pokemon API is very easy to install and deploy in a Docker container.
 
-* Database creation
+### Starting server
 
-* Database initialization
 
-* How to run the test suite
+ - **Step 01:** Clone project
+	```
+	git clone https://github.com/GleisonAndrade/pokemon-api.git
+	cd pokemon-api
+	```
+ - **Step 02:** Builds project images
+	 ```
+	 docker-compose build
+	 ```
+ - **Step 03:** Boots up the app
+	 ```
+	 docker-compose up
+	 ```
+ - **Step 04:** Verify the deployment by navigating to your server address in your preferred browser.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	```
+	http://localhost:3000/api/pokemons/bulbasaur
+	```
+**Result:** ["chlorophyll","overgrow"]
